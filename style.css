@@ -1,0 +1,75 @@
+.main-content { min-width: 0; background: #fff; }
+.dashboard-tabs {
+  height: 40px;
+  background: #dadada;
+  border-bottom: 5px solid var(--orange);
+  display: flex;
+  align-items: stretch;
+}
+.active-tab {
+  margin: 0;
+  padding: 0 15px;
+  display: flex;
+  align-items: center;
+  background: var(--orange);
+  color: #fff;
+  font-size: 14px;
+  font-weight: 700;
+}
+.dashboard-content { padding: 11px 14px 22px; }
+.quick-actions { display: flex; flex-wrap: wrap; gap: 6px 10px; margin-bottom: 17px; }
+.quick-action { padding: 5px 5px; }
+.summary-cards { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 18px; }
+.summary-card {
+  min-width: 0;
+  overflow: hidden;
+  border: 1px solid #ddd;
+  box-shadow: 0 1px 4px rgba(0,0,0,.14);
+}
+.card-body {
+  min-height: 163px;
+  padding: 16px 14px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 8px;
+  color: #fff;
+}
+.metric-icon { width: 67px; height: 67px; align-self: flex-start; margin-top: 2px; }
+.card-metric {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 8px;
+  text-align: right;
+  min-width: 0;
+}
+.card-metric strong { font-size: 42px; line-height: 1; font-weight: 400; }
+.card-metric span { font-size: 13px; line-height: 1.35; }
+.card-footer {
+  min-height: 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 12px;
+  font-size: 12px;
+  font-weight: 600;
+}
+.icon-arrow { width: 17px; height: 17px; }
+.green-card .card-body { background: var(--green); }
+.green-card .card-footer { background: #ededed; color: #28b75a; }
+.blue-card .card-body { background: var(--blue); }
+.blue-card .card-footer { background: #ededed; color: #249bc2; }
+.red-card .card-body { background: var(--red); }
+.red-card .card-footer { background: #ededed; color: #e45a64; }
+.card-footer:hover { filter: brightness(.97); }
+
+/*CSS Bagian Todo Bawah*/
+.todo-section { margin-top: 28px; }
+.todo-panel { padding: 12px 14px 13px; background: var(--purple); }
+.todo-panel h2 { color: #fff; font-size: 14px; font-weight: 500; margin: 0 0 10px; }
+.todo-search { height: 33px; }
+.todo-search input { font-size: 12px; background: #fafafa; }
+.todo-search button { width: 38px; background: #f5f5f5; }
+.todo-empty { text-align: center; font-size: 13px; margin: 17px 0 0; color: #444; font-style: italic;}
